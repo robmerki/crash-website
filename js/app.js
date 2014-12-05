@@ -1,7 +1,8 @@
 $(document).ready(function(){
   $("a").click(function(){
     $(this).addClass("success");
-    $(".tick").slideDown();
     $(".email").prop('disabled', true);
+    $(".email").css('margin-left', '22px');
+    $(".tick").delay(310).slideDown();
   });
 });
