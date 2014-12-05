@@ -40,6 +40,7 @@ h2 {
   background: #2f4a85;
   padding: 5px 10px;
   margin-right: 5px;
+  transition: .3s all;
   font-size: 1em;
   color: white;
   font-family: "Fira Sans", sans-serif; }
@@ -56,7 +57,10 @@ a {
   text-decoration: none;
   border: none;
   border-bottom: 2px solid #20335d;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 111px;
+  height: 35px !important;
+  text-align: left; }
   a:hover {
     cursor: pointer;
     background: #37589f; }
@@ -68,7 +72,8 @@ a {
     color: #fff;
     background-color: #5267ae;
     border: none;
-    top: 2px; }
+    top: 2px;
+    width: 133px; }
     a.success:hover, a.success:active {
       background-color: #5267ae; }
   a .tick {
