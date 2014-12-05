@@ -1,0 +1,96 @@
+//style.scss
+* {box-sizing: border-box;}
+
+html, body {
+	height: 100%; width: 100%;
+	margin: 0;
+}
+
+body {
+	background-image: url('../img/bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom 50%;
+}
+
+.container {
+	color: white;
+	font-family: "Fira Sans", sans-serif;
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+h1 {
+	line-height: 1em;
+	font-size: 32pt;
+	font-weight: 700;
+	margin: 0;
+}
+
+h2 {
+	line-height: 1em;
+	font-size: 24pt;
+	font-weight: 400;
+	margin: .3em 0 1em 0;
+}
+
+.email {
+	display: inline-block;
+	border: none;
+	border-bottom: 2px solid #20335d;
+	color: white;
+	background: #2f4a85;
+	padding: 5px 10px;
+	margin-right: 5px;
+
+	font-size: 1em;
+	color: white;
+	font-family: "Fira Sans", sans-serif;
+
+	&::-webkit-input-placeholder {color: rgba(255,255,255,.5);}
+}
+
+a {
+	transition: .3s all;
+	display: inline-block;
+	position: relative;
+	color: white;
+	background: #2f4a85;
+	padding: 5px 10px;
+	text-decoration: none;
+	border: none;
+	border-bottom: 2px solid #20335d;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+		background: #37589f;
+	}
+	&:active {
+		background: #20335d;
+		border-bottom: 0;
+		top: 2px;
+	}
+	&.success {
+		color: #fff;
+		background-color: #5267ae;
+		border: none;
+		top: 2px;
+		&:hover,&:active {background-color: #5267ae;}
+	}
+	.tick {
+		position: relative;
+		top: 2px;
+		margin-left: 2px;
+		width: 16px;
+		height: 16px;
+		background-size: 16px 16px;
+		background-image: url("../img/tick.png");
+		overflow: hidden;
+		display: none;
+	}
+}
+
+
