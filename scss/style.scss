@@ -37,6 +37,7 @@ h2 {
 }
 
 .email {
+	position: relative;
 	display: inline-block;
 	border: none;
 	border-bottom: 2px solid #20335d;
@@ -51,6 +52,17 @@ h2 {
 	font-family: "Fira Sans", sans-serif;
 
 	&::-webkit-input-placeholder {color: rgba(255,255,255,.5);}
+	&.success {
+		color: #fff;
+		background-color: #5267ae;
+		border-bottom: 2px solid #7c97ee;
+		margin-left: 22px;
+		cursor: default;
+		&:hover,&:active {background-color: #5267ae;}
+	}
+	&.failure {
+		border-bottom: 2px solid #a50d15;
+	}
 }
 
 a {
@@ -65,7 +77,6 @@ a {
 	border-bottom: 2px solid #20335d;
 	border-radius: 5px;
 	width: 111px;
-	height: 35px !important;
 	text-align: left;
 
 	&:hover {
@@ -80,10 +91,10 @@ a {
 	&.success {
 		color: #fff;
 		background-color: #5267ae;
-		border: none;
-		top: 2px;
+		border-bottom: 2px solid #7c97ee;
 		width: 133px;
-		&:hover,&:active {background-color: #5267ae;}
+		cursor: default;
+		&:hover,&:active {background-color: #5267ae; top: 0;}
 	}
 	.tick {
 		position: relative;
